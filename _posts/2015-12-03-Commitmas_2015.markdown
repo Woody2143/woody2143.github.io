@@ -11,4 +11,4 @@ My repo for this is [here](http://github.com/Woody2143/commitmas-2015). I missed
 
 I'll miss tonights webinar as I'll be at the [Atlanta PerlMongers Meeting](http://atlanta.pm.org).
 
-![Holiday octocat](https://github.com/commitmas/30-days-of-commitmas-2015/blob/master/octocat/holiday-octocat.png)
+![Holiday octocat](/assets/holiday-octocat-1024x699.png)
