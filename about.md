@@ -5,9 +5,7 @@ permalink: /about/
 ---
 
 ##Links to me:##
-- twitter: [Woody2143](https://twitter.com/Woody2143)
-- Github: [Woody2143](https://github.com/Woody2143)
-- Email: Woody at 2143 dot net (why make it easier for the spammers)
+- See bottom of page.
 
 ##Home:##
 - Married since '04.
