@@ -9,6 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://woody2143.github.io" # the base hostname & protocol for your site
 twitter_username: woody2143
 github_username:  woody2143
+linkedIn_username:  Woody2143
 
 highlighter: pygments
 github: [Repository metadata]
