@@ -1,0 +1,14 @@
+---
+layout: post
+title: Commitmas 2015
+date: 2015-12-03T15:40:31.000Z
+categories: commitmas2015
+---
+
+The other day at lunch my friend [Scott](http://github.com/Sboss) told me about [Commitmas](https://github.com/commitmas/30-days-of-commitmas-2015). The idea is that, in an effort to learn git/Github you complete a series of challenges (based on your existing expertese).
+
+My repo for this is [here](http://github.com/Woody2143/commitmas-2015). I missed day one due to Taco Tuesday (mmmm Tacos) and Destiny reset night (Tuesday nightfall/raid). The second night I setup the repo, joined the webinar and tweeted some, but I've still not found a project to submit pull requests to. Today is day 3 and I just setup this page.
+
+I'll miss tonights webinar as I'll be at the [Atlanta PerlMongers Meeting](http://atlanta.pm.org).
+
+[Holiday octocat](https://github.com/commitmas/30-days-of-commitmas-2015/blob/master/octocat/holiday-octocat.png)
