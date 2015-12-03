@@ -12,6 +12,12 @@ Home:
 - Two children, both boys.
 - Wife is tolerant of my geeky ways as she enjoys the free technical support.
 
+Social:
+- Regularly attend the Monthly [Atlanta Perl Mongers](http://atlanta.pm.org) meeting
+- Used to attend [Atlanta Unix Users Group](http://auug.org) meeting till it ended
+- Used to attend [Atlanta Linux Enthusiasts](http://mail.ale.org), I really need to start going back
+- Occasionally attend the Atlanta Javascript users group. Now that I don't work downtown I'm not sure I'll make it to those meetings again
+
 Work History:
 - Gainfully employed at a communications company for the past 15+ years.
   - Primary work is to troubleshoot VoIP issues
@@ -31,7 +37,19 @@ Languages:
     - I like Dancer better than Catalyst.
 
 - Bash scripting as served me well for tying processes together. Though I feel guilty for not using Perl instead...
-- I use awk for the tarabytes of CSV files I manage, as much as I'd rather use Perl, awk is just plain faster for splitting CSV...
+- I use awk for the terabytes of CSV files I manage, as much as I'd rather use Perl, awk is just plain faster for splitting CSV...
 - I've been writing a lot more javascript as of late, specifically using AngularJS on a couple of work projects.
   - I've even gone so far as to actually write unit tests in Jasmine.
   - Working up to protractor.
+
+Projects:
+- Scripts (bash/awk/perl) that processes call detail records for the purposes of indexing and reports
+- Scripts (bash/awk) that to transform/enrich CSV call records to something readable
+- Several small CRUD type websites to track information in an effort to migrate away from spreadsheets (evil) and make the data accessible from other programs. Written using perl and javascript.
+- Various scripts to help locate call records quicker.
+- Website front ends to commandline tools
+
+Goals:
+- Get contributing to other projects
+- Build up my public portfolio
+- Learn, learn, learn.
