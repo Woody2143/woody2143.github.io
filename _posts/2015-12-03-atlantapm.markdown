@@ -72,7 +72,7 @@ Just some incomplete notes from the December [Atlanta Perl Mongers](https://atla
   - `prompt` function
   - `repeat {} until $condition` is fairly neat
   - [Util](http://perlmonks.org/?node=Util) said some wrong stuff. Corrections were made. Apologies were offered. We grew closer as a group.
-  - Pick and Roll are not only functions, but they are fun to day.
+  - Pick and Roll are not only functions, but they are fun to say.
 
 # Misc
 - MDW has a noisy phone.
