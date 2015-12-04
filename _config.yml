@@ -2,9 +2,8 @@
 title: A public record...
 email: woody@2143.net
 description: > # this means to ignore newlines until "baseurl:"
-  Github page for my profile, Woody2143. Likely to contain random posts
-  about whatever I'm working on that week. Figure that this is a good a
-  place to blog as any.
+  Github page to contain random posts about whatever I'm working on that
+  working on that week. Figure that this is a good a place to blog as any.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://woody2143.github.io" # the base hostname & protocol for your site
 twitter_username: woody2143
