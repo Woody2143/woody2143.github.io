@@ -32,6 +32,9 @@ Just some incomplete notes from the December [Atlanta Perl Mongers](https://atla
 
 - [Jekyll](http://jekyllrb.com/) - Blogging engine for coders
   - [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/)
+  - I meant to include the below link in my talk. It shows the Repository metadata you can access via your Github page within Jekyll
+    - [Repository metadata on GitHub Pages](https://help.github.com/articles/repository-metadata-on-github-pages/)
+
   - Jekyll is pretty good on it's own, even if you don't want to use Github Pages.
   - [Stephen](http://stephen.cristol.googlepages.com/) asked if any other libraries are used in Jekyll.
     - No, it's very lightweight
