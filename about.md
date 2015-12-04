@@ -13,7 +13,7 @@ permalink: /about/
 - Wife is tolerant of my geeky ways as she enjoys the free technical support.
 
 # Social:
-- Regularly attend the Monthly [Atlanta Perl Mongers](http://atlanta.pm.org) meeting
+- Regularly attend the monthly [Atlanta Perl Mongers](http://atlanta.pm.org) meeting
 - Used to attend [Atlanta Unix Users Group](http://auug.org) meeting till it ended
 - Used to attend [Atlanta Linux Enthusiasts](http://mail.ale.org), I really need to start going back
 - Occasionally attend the Atlanta Javascript users group. Now that I don't work downtown I'm not sure I'll make it to those meetings again
