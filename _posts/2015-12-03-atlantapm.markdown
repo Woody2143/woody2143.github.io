@@ -47,7 +47,7 @@ Just some incomplete notes from the December [Atlanta Perl Mongers](https://atla
 
       ![Karma Coverage](/assets/karma_coverage_screenshot_2015-12-03_21-45-38.png)
 
-    - Some discussion around testing in general and last months talk and some of the positive affects that had.
+    - Some discussion around testing in general and last months talk and some of the positive effects that had.
 
   - Some talk about the small book, [Javascript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do)
 
