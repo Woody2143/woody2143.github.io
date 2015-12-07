@@ -7,7 +7,7 @@ categories: github
 
 Still trying to sort out using jekyll to manage this page.
 
-# Notes:
+# Initial Notes:
 - Some of the same markdown that can be used in README.md in my repos doesn't render the same on these pages
 - Need to add a hook to prebuild before commiting to catch build errors
 - May point 2143.net at this page since it currently isn't doing anything but hosting my email
@@ -16,3 +16,7 @@ Still trying to sort out using jekyll to manage this page.
   - Also had to mess with sass for the first time to get the column width adjusted in the footer.
 
 - I'm not totally sold on the site title yet, but we'll see.
+
+# Update 2015-12-07
+- Found this page that gives some good ideas for adding things to a Github page.
+  - [http://jmcglone.com/guides/github-pages/](http://jmcglone.com/guides/github-pages/)
