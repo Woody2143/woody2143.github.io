@@ -52,6 +52,12 @@ I wanted to note down a few things I read/saw today (mainly via Reddit):
       - Picked up the soft copy as well as the audio version.
       - Also picked up 'How to Speak How to Listen' as suggested by Amazon.
 
+- How to be a Programmer
+  - Came across this essay that had been converted to markdown and put on github
+  - [https://github.com/braydie/HowToBeAProgrammer](https://github.com/braydie/HowToBeAProgrammer)
+  - Basically saving this to read over later.
+  - The comments on reddit were a bit back and forth on the usefulness/validity of this info
+
 # Videos
 - Suggested this playlist to a friend who is trying to get in to the world of VoIP
   - [Telephone Systems](https://www.youtube.com/playlist?list=PL08C86258934DD006)
