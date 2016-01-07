@@ -16,7 +16,7 @@ categories:
 
 So the holidays went by pretty fast and I kept busy enough without having to try to write blog posts. It's a habit I have to work on...
 
-I wanted to note down a few things I read/saw today (mainly via Reddit):
+I wanted to note down a few things I've read or am meaning to read over the past month. Much of it is reference links as I work on testing an AngularJS app.
 
 # Testing AngularJS:
 - A good intro; wish I would have had it earlier
@@ -86,6 +86,10 @@ I wanted to note down a few things I read/saw today (mainly via Reddit):
   - [https://github.com/braydie/HowToBeAProgrammer](https://github.com/braydie/HowToBeAProgrammer)
   - Basically saving this to read over later.
   - The comments on reddit were a bit back and forth on the usefulness/validity of this info
+
+- Community and Career Reads in 2015
+  - Just saw this link courtasy of Jono Bacon on FB
+  - Looks like there is some potential reading material there, just haven't looked through all the way.
 
 # Videos
 - Suggested this playlist to a friend who is trying to get in to the world of VoIP
