@@ -26,9 +26,38 @@ I wanted to note down a few things I read/saw today (mainly via Reddit):
     - [Github Repo](https://github.com/kensho/ng-describe)
     - [How-To Use](https://glebbahmutov.com/blog/1-2-3-tested/)
 
+- My real goal here would have been to have more information with each of these links, like, what I got out of them.
 - Some sites I've used recently while working on writing tests for an angularjs app
-  - [http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html](http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html)
-  - I just got looking at my bowser windows; I got a lost more to write here, just not right now...
+  - [AngularJS Docs on testing](https://docs.angularjs.org/guide/unit-testing)
+  - Found a nice site talking about testing, with a video, that went a bit more in to the different types of test, what to test and when.
+    - What's not to like about a site called "Year of Moo"
+    - [http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html](http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html)
+  - Used this to help me get on my feet initially
+    - [Introduction to Unit Test: Services](http://angular-tips.com/blog/2014/06/introduction-to-unit-test-services/)
+  - Another overview of AngularJS Testing. I liked some of the way this was done and adopted some of the practices
+    - [Unit Testing AngularJS Applications](http://bencentra.com/code/2015/11/16/unit-testing-angularjs.html?utm_campaign=NG-Newsletter&utm_medium=email&utm_source=NG-Newsletter_124)
+  - Yet another overview I skimmed through...
+    - [Unit testing Best Practices in AngularJS](http://andyshora.com/unit-testing-best-practices-angularjs.html)
+  - Some material on using ngMock
+    - [ngMock Fundamentals for AngularJS Unit Testing - Understanding Module](http://www.bradoncode.com/blog/2015/05/24/ngmock-fundamentals-angularjs-unit-testing/)
+  - So it seems that if you locally install npm modules there is a bin path you should have setup so you can run commands from those modules. This gave me a bit of a headache till I found the below.
+    - [How to use package installed locally in node_modules?](http://stackoverflow.com/questions/9679932/how-to-use-package-installed-locally-in-node-modules)
+  - One of the many references I used while figuring out how to test http calls
+    - [Using ngMock to simulate $http calls in service unit tests](http://stackoverflow.com/questions/15927919/using-ngmock-to-simulate-http-calls-in-service-unit-tests)
+  - I have way too many modals that need tested...
+    - [AngularJS UI Bootstrap mocking $modal in unit test](http://stackoverflow.com/questions/21214868/angularjs-ui-bootstrap-mocking-modal-in-unit-test)
+  - Getting more idea of testing AngularJS Services
+    - I think this gave me some clarification that I could do multiple beforeEach calls. I forget.
+    - [Simple unit test for Angular service](http://stackoverflow.com/questions/27247427/simple-unit-test-for-angular-service)
+  - Of course I'd eventually get around to pulling up the Jasmine site itself
+    - [Jasmine Introduction](http://jasmine.github.io/2.4/introduction.html)
+  - I was getting an error for awhile in my tests and found a related SO question
+    - I was using a spy while doing an http.get or post call, I think
+    - [Unknown provider: $routeParamsProvider](http://stackoverflow.com/questions/29947687/unknown-provider-routeparamsprovider)
+    - [Unknown provider in angular unit test](http://stackoverflow.com/questions/26627468/unknown-provider-in-angular-unit-testing)
+    - [http://jsfiddle.net/fdietz/2Ny8x/](http://jsfiddle.net/fdietz/2Ny8x/)
+  - Learned to use the 'debugger' keyword
+    - [How do you debug Jasmine tests with Resharper?](http://stackoverflow.com/questions/16222098/how-do-you-debug-jasmine-tests-with-resharper)
 
 # Material Design
 - Google has a design specification called 'Material Design'.
