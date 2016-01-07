@@ -62,5 +62,8 @@ I wanted to note down a few things I read/saw today (mainly via Reddit):
 - Suggested this playlist to a friend who is trying to get in to the world of VoIP
   - [Telephone Systems](https://www.youtube.com/playlist?list=PL08C86258934DD006)
 
+- I like this guys training videos. I at least watch the intro one for AngularJS
+  - [Level Up Tutorials](https://www.youtube.com/channel/UCyU5wkjgQYGRB0hIHMwm2Sg)
+
 - At some point I'll come back to watch this as I tinker with electronics
   - [Engineering Tutorial: How To Use A Multimeter](http://www.shaungehring.com/software-blog//engineering-tutorial-how-to-use-a-multimeter)
