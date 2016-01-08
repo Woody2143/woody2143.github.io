@@ -140,4 +140,5 @@ sub mystery ( Int $num --> Int ) {
     - also had a link to [Coding Game](https://www.codingame.com/start)
       - "A website where you solve games by coding the AI."
       - looks interesting
+      - Support 20+ languages; Perl included!
 ![If programming languages were weapons]({{site.baseurl}}/assets/If_Programming_Languages_Were_Weapons.jpg)
