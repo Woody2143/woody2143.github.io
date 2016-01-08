@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Markdown Editors
-date: '2016-01-08 10:15'
-tags:
+date: "2016-01-08 10:15"
+tags: 
   - markdown
-categories:
+categories: 
   - editors
+published: true
 ---
+
 
 I decided to look around at some different markdown editors just to see what was out there.
 
@@ -48,7 +50,10 @@ I decided to look around at some different markdown editors just to see what was
   - Looks nice
     - windows installed easily enough
     - debian only package.
-  - More testing to come...
+      - not the best way to install the binary package
+  - Feels a little clunky on linux in general
+  - It's pretty simple looking. 
+  - doubt I'll go forward with this
 
 - [Dillinger](http://dillinger.io/)
   - online editor
