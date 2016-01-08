@@ -1,3 +1,14 @@
+---
+published: false
+layout: post
+date: "2016-01-08 19:35"
+tags: 
+  - whitenoise
+  - chipolte
+categories: 
+  - dailynotes
+---
+
 Just some notes about things I found today.
 
 #Office Life
