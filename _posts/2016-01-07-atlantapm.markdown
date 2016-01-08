@@ -10,6 +10,7 @@ published: true
 ---
 
 
+
 Notes from the January Atlanta Perl Mongers meeting.
 
 # Pre-Pre-meeting Discussion.
@@ -100,3 +101,6 @@ sub mystery ( Int $num --> Int ) {
   ```
   p6g -e 'my $a = 42; .say for sort $a.^methods>>.name'
   ```
+  
+  # Around the dinner table
+  
