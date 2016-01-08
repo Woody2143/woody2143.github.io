@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: "2016-01-08 19:35"
 tags: 
@@ -8,6 +8,7 @@ tags:
 categories: 
   - dailynotes
 ---
+
 
 Just some notes about things I found today.
 
