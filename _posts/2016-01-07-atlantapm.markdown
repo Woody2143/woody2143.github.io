@@ -85,7 +85,7 @@ Notes from the January Atlanta Perl Mongers meeting.
     - I mainly copied the code down to see how the code block looked on the page.
     - I can't type fast enough to show all the code he had done.
 
-```perl6
+{% highlight perl6 %}
 my Int @numbers;
 # Precondition: numbers contains int values in no particular order.
 sub mystery ( Int $num --> Int ) {
@@ -94,7 +94,8 @@ sub mystery ( Int $num --> Int ) {
   }
   return -1;
 }
-```
+{% endhighlight %}
+
 - Util will post his code online at some point
 
 - Scott asked how you can find all the Perl6 keywords; ex .value .key etc
