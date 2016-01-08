@@ -11,6 +11,7 @@ published: true
 
 
 
+
 Notes from the January Atlanta Perl Mongers meeting.
 
 # Pre-Pre-meeting Discussion.
@@ -93,6 +94,7 @@ sub mystery ( Int $num --> Int ) {
   return -1;
 }
 ```
+- Util will post his code online at some point
 
 - Scott asked how you can find all the Perl6 keywords; ex .value .key etc
   - Read [the docs](docs.perl6.org)
@@ -102,5 +104,32 @@ sub mystery ( Int $num --> Int ) {
   p6g -e 'my $a = 42; .say for sort $a.^methods>>.name'
   ```
   
-  # Around the dinner table
-  
+# Around the dinner table
+- [Magnetic Notebook](http://imgur.com/gallery/psjYb)
+- Util was initially mistaken for a woman by the server. :)
+  - In her defence he has long hair, and she saw him from behind initially
+- Further discussion of Stephens talk
+  - who runs their own DNS servers
+    - I've used [Dyn Internet Guide](http://dyn.com/labs/dyn-internet-guide/) from time to time.
+- During his talk Util had mentioned he was unable to copy the code from the PDF he was referencing.
+  - Scott said that [PDFPen Pro](https://smilesoftware.com/pdfpenpro) is a tool he's used before to work around that type of problem
+    - Mac only
+    - $$
+- Some talk about how he manages browswers with many (many) open tabs
+  - Util wrote a script to dump page titles and urls to a text file
+  - Stephen suggested a the 'Session Manager' plugin
+    - Chrome [link](https://chrome.google.com/webstore/detail/session-manager/bbcnbpafconjjigibnhbfmmgdbbkcjfi?hl=en)
+    - Firefox [link](https://addons.mozilla.org/en-US/firefox/addon/session-manager/)
+  - I am trying to write up posts with the links and what I got out of them; but that's a fairly lofty goal.
+  - I also save off information to [Evernote](https://evernote.com/)
+- Fesability of putting ChromeOS on an older laptop
+  - Scott said it should work fine; may want to put in an SSD though
+  - [Quick Start Guide](https://www.chromium.org/chromium-os/quick-start-guide)
+- [Penrose Tiling](https://en.wikipedia.org/wiki/Penrose_tiling)
+- [Gold Dust Woman by Karen Elson](http://shz.am/t62691974) was remarked on as it played in the restraunt
+- I asked if anyone had read [The Player of Games](http://amzn.com/0316005401) or read anything from the [Culture](http://www.amazon.com/Iain-M.-Banks/e/B000APXAVG/) series.
+  - I heard read about it online, both Zuckerberg and Musk endorsed it as a must-read.
+  - I finished it over the holiday
+  - Util is a third of the way in
+  - Enjoyed it; surprised it was from 1988
+  - I would like to read more about why Zuckerberg/Musk endorsed it
