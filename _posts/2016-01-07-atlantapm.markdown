@@ -12,6 +12,7 @@ published: true
 
 
 
+
 Notes from the January Atlanta Perl Mongers meeting.
 
 # Pre-Pre-meeting Discussion.
@@ -133,3 +134,6 @@ sub mystery ( Int $num --> Int ) {
   - Util is a third of the way in
   - Enjoyed it; surprised it was from 1988
   - I would like to read more about why Zuckerberg/Musk endorsed it
+
+- Not that I fully endorse everything it says; but some of it was funny :)
+![If programming languages were weapons]({{site.baseurl}}/assets/If_Programming_Languages_Were_Weapons.jpg)
