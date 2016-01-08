@@ -10,6 +10,7 @@ published: true
 ---
 
 
+
 I decided to look around at some different markdown editors just to see what was out there.
 
 - [remarkable](https://remarkableapp.github.io/)
@@ -37,7 +38,8 @@ I decided to look around at some different markdown editors just to see what was
 - [prose.io](http://prose.io/)
   - online editor
   - hooks directly in to github
-    - that's fine if you are good with giving it permission to all of your repos
+    - ~~that's fine if you are good with giving it permission to all of your repos~~
+      - nevermind, you can set it to  only access 'public' repos
   - very clean looking, saves directly as commits
   - I really like this one as I can bring it up in chrome on my phone and edit posts directly there
     - really it'd be nice to be able to edit directly from any computer I'm on period
