@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Atlanta.pm - January 2016
-date: '2016-01-07 19:23'
-tags:
+title: "Atlanta.pm - January 2016"
+date: "2016-01-07 19:23"
+tags: 
   - perl
-categories:
+categories: 
   - atlanta.pm
+published: true
 ---
+
 
 Notes from the January Atlanta Perl Mongers meeting.
 
@@ -19,7 +21,7 @@ Notes from the January Atlanta Perl Mongers meeting.
 - New Postgres release (9.5)
   - Fun new feature; Up-Sert
     - Inserts or Updates
-    - mySQL has had it for awhile: [Insert on duplicate](https://dev.mysql.com/doc/refman/5.7/en/insert-on-duplicate.html))
+    - mySQL has had it for awhile: [Insert on duplicate](https://dev.mysql.com/doc/refman/5.7/en/insert-on-duplicate.html)
 
 - [Dreamhost](https://www.dreamhost.com/) has some pretty good pricing right now.
 
