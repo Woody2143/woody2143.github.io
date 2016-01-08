@@ -135,5 +135,9 @@ sub mystery ( Int $num --> Int ) {
   - Enjoyed it; surprised it was from 1988
   - I would like to read more about why Zuckerberg/Musk endorsed it
 
-- Not that I fully endorse everything it says; but some of it was funny :)
+- Not that I fully endorse everything the below image says; but some of it was funny :)
+  - found [here](http://imgur.com/gallery/2w9IS45)
+    - also had a link to [Coding Game](https://www.codingame.com/start)
+      - "A website where you solve games by coding the AI."
+      - looks interesting
 ![If programming languages were weapons]({{site.baseurl}}/assets/If_Programming_Languages_Were_Weapons.jpg)
