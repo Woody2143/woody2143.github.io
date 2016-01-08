@@ -100,7 +100,7 @@ sub mystery ( Int $num --> Int ) {
 
 - Scott asked how you can find all the Perl6 keywords; ex .value .key etc
   - Read [the docs](docs.perl6.org)
-  - and/or run
+  - and/or run (and then read [the docs](docs.perl6.org))
 
   ```
   p6g -e 'my $a = 42; .say for sort $a.^methods>>.name'
