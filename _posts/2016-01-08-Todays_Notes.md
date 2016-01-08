@@ -1,14 +1,15 @@
 ---
 published: true
-title: "Todays Notes 2016-01/08"
+title: "Today's Notes 2016-01-08"
 layout: post
 date: "2016-01-08 19:35"
-tags:
+tags: 
   - whitenoise
   - chipolte
-categories:
+categories: 
   - dailynotes
 ---
+
 
 
 Just some notes about things I found today.
