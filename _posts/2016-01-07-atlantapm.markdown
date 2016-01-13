@@ -55,7 +55,7 @@ Notes from the January Atlanta Perl Mongers meeting.
 - Some discussion around how some slides are more blank than others
 - [Pi Hole](http://pi-hole.net/) is a great name
 - [HTTPS Everywhere](https://www.eff.org/https-everywhere) is a handy plugin
-- Stephen needs to use github.io instead of ~geocities~ Google Pages...
+- Stephen needs to use github.io instead of geocities, I mean, Google Pages...
   - [stephen.cristol.googlepages.com](https://stephen.cristol.googlepages.com)
   - It seems that everyone loves GeoCities
 
