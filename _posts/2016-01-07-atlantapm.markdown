@@ -13,16 +13,17 @@ published: true
 
 
 
+
 Notes from the January Atlanta Perl Mongers meeting.
 
 # Pre-Pre-meeting Discussion.
 - Companies dealing in blood, suck.
-- Karma HotSpot
-  - Scott was talking about this pay-as-you-go hotspot, may be worth a look.
-  - [Karma](https://yourkarma.com/how-it-works)
+- Scott was talking about this pay-as-you-go hotspot, may be worth a look.
+  - [Karma](https://yourkarma.com/how-it-works) HotSpot
+
 
 - New Postgres release (9.5)
-  - Fun new feature; Up-Sert
+  - Fun new feature; UpSert
     - Inserts or Updates
     - mySQL has had it for awhile: [Insert on duplicate](https://dev.mysql.com/doc/refman/5.7/en/insert-on-duplicate.html)
 
@@ -37,12 +38,10 @@ Notes from the January Atlanta Perl Mongers meeting.
 - [Simply Noise](https://simplynoise.com/)
   - For when you want to cut down background noise or just be a smartass at a meeting.
 
-- I needed to send a link to Scott and asked him for his preferred method, he pointed out Slack
-  - [Slack](https://slack.com)
-
-- Yubikey - hardware 2-factor authentication
+- I needed to send a link to Scott and asked him for his preferred method, he pointed out [Slack](https://slack.com)
+- [Yubikey](https://www.yubico.com/products/yubikey-hardware/) - hardware 2-factor authentication
   - Was showing mine to the group.
-  - [Yubikey](https://www.yubico.com/products/yubikey-hardware/)
+  - Works with Google, no software required as it works through Chrome (and Firefox I think) fine.
 
 # Stephen's talk - Keeping internet wolves at bay
 - I ruined his punchline slide.
@@ -56,7 +55,7 @@ Notes from the January Atlanta Perl Mongers meeting.
 - Some discussion around how some slides are more blank than others
 - [Pi Hole](http://pi-hole.net/) is a great name
 - [HTTPS Everywhere](https://www.eff.org/https-everywhere) is a handy plugin
-- Stephen needs to use github.io instead of ~~geocities~~ Google Pages...
+- Stephen needs to use github.io instead of ~geocities~ Google Pages...
   - [stephen.cristol.googlepages.com](https://stephen.cristol.googlepages.com)
   - It seems that everyone loves GeoCities
 
