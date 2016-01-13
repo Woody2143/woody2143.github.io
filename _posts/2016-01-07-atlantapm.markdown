@@ -65,9 +65,9 @@ Notes from the January Atlanta Perl Mongers meeting.
 - Last year was 'Christmas'! - Stephen
   - Last year was 2015 - Util
   - Basically asking what happened with the Christmas release.
-  - I taught everyone that [Lego Advent calendars are a thing](http://www.target.com/p/lego-city-advent-calendar-60099/-/A-21505862)
+  - I told everyone about [Lego Advent calendars](http://www.target.com/p/lego-city-advent-calendar-60099/-/A-21505862)
   - [Perl 5 Advent Calendar](http://www.perladvent.org/2015/)
-  - Util sums up what was put out this holiday
+  - Util sums up what was put out this holiday (re: Perl6)
     - Good post on the [Perl 6 Advent Calendar](https://perl6advent.wordpress.com/) site
 
 - Util got [Thing Explainer](http://amzn.com/0544668251) for Christmas.
