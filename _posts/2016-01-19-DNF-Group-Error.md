@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Fedora 22 DNF Group Error
 date: "2016-01-18 22:00"
@@ -12,6 +12,7 @@ tags:
 categories: 
   - desktop
 ---
+
 
 So I ran in to a fun error on a new-ish Fedora 22 install the other week...
 
