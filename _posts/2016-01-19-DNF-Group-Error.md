@@ -3,13 +3,13 @@ published: true
 layout: post
 title: Fedora 22 DNF Group Error
 date: "2016-01-18 22:00"
-tags: 
+tags:
   - linux
   - fedora
   - dnf
   - group
   - troubleshooting
-categories: 
+categories:
   - desktop
 ---
 
@@ -56,9 +56,9 @@ Traceback (most recent call last):
 ValueError: No JSON object could be decoded
 ```
 
-I proceeded to scrach my head and google the error **ValueError: No JSON object could be decoded** along with various combinations of **fedora**, **dnf**, **groups**, etc...
+I proceeded to scratch my head and Google the error "ValueError: No JSON object could be decoded" along with various combinations of "fedora", "dnf", "groups", etc...
 
-Sadly that is just a generic python/json error and nothing useful was coming up. I went about several other searches in different ways with no luck. So I started to investigate out the various scripts called out in the traceback above. Finally I got to **/usr/lib/python2.7/site-packages/dnf/persistor.py** and found the following json file mentioned **groups.json**. 
+Sadly that is just a generic python/json error and nothing useful was coming up. I went about several other searches in different ways with no luck. So I started to investigate out the various scripts called out in the traceback above. Finally I got to "/usr/lib/python2.7/site-packages/dnf/persistor.py" and found the following json file mentioned "groups.json".
 
 ```
     def __init__(self, persistdir, comps=None):
@@ -71,7 +71,7 @@ Sadly that is just a generic python/json error and nothing useful was coming up.
         self._ensure_sanity()
 ```
 
-I then searched for that file on my laptop and found it under **/var/lib/dnf**. Comparing the files on the desktop and laptop I found that the desktop one was empty while the laptop had several things listed. So I copied the contents of the file over and reran the groups command
+I then searched for that file on my laptop and found it under "/var/lib/dnf". Comparing the files on the desktop and laptop I found that the desktop one was empty while the laptop had several things listed. So I copied the contents of the file over and reran the groups command
 
 ```
 $ dnf groups
