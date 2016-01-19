@@ -14,12 +14,13 @@ categories:
 ---
 
 
+
 So I ran in to a fun error on a new-ish Fedora 22 install the other week...
 
 After a recent office move (~4 months ago) I installed Fedora 22 on my work machine. It was running the latest Gnome, and I gave it a shot for awhile, but I just can't get behind that new interface. So after the holiday I sat down to install Mate as I was already using that on my laptop and liked it just fine. That is when I ran in to trouble.
 
 I went to use the group install command but got the following error:
-```
+{% highlight sh %}
 $ dnf groups
 Last metadata expiration check performed 2:11:39 ago on Tue Jan 19 06:51:53 2016.
 Traceback (most recent call last):
@@ -52,12 +53,12 @@ Traceback (most recent call last):
   File "/usr/lib64/python2.7/json/decoder.py", line 384, in raw_decode
     raise ValueError("No JSON object could be decoded")
 ValueError: No JSON object could be decoded
-```
+{% end highlight %}
 
 I proceeded to scrach my head and google the error **ValueError: No JSON object could be decoded** along with various combinations of **fedora**, **dnf**, **groups**, etc...
 
 Sadly that is just a generic python/json error and nothing useful was coming up. I went about several other searches in different ways with no luck. So I started to investigate out the various scripts called out in the traceback above. Finally I got to **/usr/lib/python2.7/site-packages/dnf/persistor.py** and found the following json file mentioned **groups.json**. 
-```
+{% highlight sh %}
     def __init__(self, persistdir, comps=None):
         self._commit = False
         self._comps = comps
@@ -66,7 +67,7 @@ Sadly that is just a generic python/json error and nothing useful was coming up.
         self._original = None
         self._load()
         self._ensure_sanity()
-```
+{% end highlight %}
 I then searched for that file on my laptop and found it under **/var/lib/dnf**. Comparing the files on the desktop and laptop I found that the desktop one was empty while the laptop had several things listed. So I copied the contents of the file over and reran the groups command
 ```
 $ dnf groups
