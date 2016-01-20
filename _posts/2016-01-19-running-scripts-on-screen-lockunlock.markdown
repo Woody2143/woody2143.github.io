@@ -40,6 +40,14 @@ signal sender=:1.66 -> dest=(null destination) serial=15 path=/org/mate/ScreenSa
    boolean false
 {% endhighlight %}
 
+The bash script works like a champ so far...
+
+{% highlight sh %}
+~$ bash bin/dbus-monitor-screensaver.sh
+SCREEN_LOCKED
+SCREEN_UNLOCKED
+{% endhighlight %}
+
 I also found this [StackOverflow question](http://unix.stackexchange.com/questions/212347/how-to-monitor-the-screen-lock-unlock-in-the-ubuntu-14-04) that has some python code included; basically based on the previous SO question/code.
 
 {% highlight python %}
@@ -107,7 +115,7 @@ So the original code in file "lib/site_perl/5.22.0/Event/ScreenSaver/Unix.pm" is
     my $screensaver_object = $screensaver->get_object("/org/gnome/ScreenSaver", "org.gnome.ScreenSaver");
 {% endhighlight %}
 
-And I changed it to this:
+I changed the 'gnome' to 'mate':
 {% highlight perl %}
     my $screensaver = $bus->get_service("org.mate.ScreenSaver");
 
@@ -121,4 +129,4 @@ ScreenSaver started!
 ~$
 {% endhighlight %}
 
-I'll have to dig in to why that happened....
+I'll have to dig in to why that happened... In the meantime the bash script I started with is looking pretty good...
