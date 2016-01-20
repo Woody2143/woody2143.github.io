@@ -25,7 +25,7 @@ dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'" |
       *"boolean false"*) echo SCREEN_UNLOCKED;;  
     esac
   done
-{% end highlight %}
+{% endhighlight %}
 
 Looks straight forward enough. I went ahead and just ran the 'dbus-monitor' command just to see what the output looks like, and it does seem to match up fine.
 
@@ -38,7 +38,7 @@ signal sender=:1.66 -> dest=(null destination) serial=14 path=/org/mate/ScreenSa
    boolean true
 signal sender=:1.66 -> dest=(null destination) serial=15 path=/org/mate/ScreenSaver; interface=org.mate.ScreenSaver; member=ActiveChanged
    boolean false
-{% end highlight %}
+{% endhighlight %}
 
 I also found this [StackOverflow question](http://unix.stackexchange.com/questions/212347/how-to-monitor-the-screen-lock-unlock-in-the-ubuntu-14-04) that has some python code included; basically based on the previous SO question/code.
 
@@ -63,7 +63,7 @@ bus.add_match_string("type='signal',interface='org.mate.ScreenSaver'")
 bus.add_message_filter(filter_cb)
 mainloop = gobject.MainLoop()
 mainloop.run()
-{% end highlight %}
+{% endhighlight %}
 
 Course my first instinct is to rewrite it in to Perl. And there appears to be a module for it already, [Net::DBus](http://search.cpan.org/~danberr/Net-DBus-0.33.1/lib/Net/DBus.pm)
 
@@ -87,14 +87,14 @@ my $ss = Event::ScreenSaver->new(
     start => sub {print "ScreenSaver started!\n" },
     stop  => sub {print "ScreenSaver stopped!\n" },
 )->run;
-{% end highlight %}
+{% endhighlight %}
 
 Cause of course nothing goes to plan right away.
 
 {% highlight sh %}
 $ ./bin/dbus-monitor-screensaver.pl
 org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.ScreenSaver was not provided by any .service files
-{% end highlight %}
+{% endhighlight %}
 
 Ok, so the Perl module needs an update. Lucky for me it's on GitHub [https://github.com/ivanwills/Event-ScreenSaver](https://github.com/ivanwills/Event-ScreenSaver).
 
@@ -105,20 +105,20 @@ So the original code in file "lib/site_perl/5.22.0/Event/ScreenSaver/Unix.pm" is
     my $screensaver = $bus->get_service("org.gnome.ScreenSaver");
 
     my $screensaver_object = $screensaver->get_object("/org/gnome/ScreenSaver", "org.gnome.ScreenSaver");
-{% end highlight %}
+{% endhighlight %}
 
 And I changed it to this:
 {% highlight perl %}
     my $screensaver = $bus->get_service("org.mate.ScreenSaver");
 
     my $screensaver_object = $screensaver->get_object("/org/mate/ScreenSaver", "org.mate.ScreenSaver");
-{% end highlight %}
+{% endhighlight %}
 
 I gave my simple script a test run and locked the screen. It worked, but the script immediately exited.
 {% highlight sh %}
 ~$ bin/dbus-monitor-screensaver.pl
 ScreenSaver started!
 ~$
-{% end highlight %}
+{% endhighlight %}
 
 I'll have to dig in to why that happened....
