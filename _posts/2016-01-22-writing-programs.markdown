@@ -76,4 +76,4 @@ A couple people suggested a few books (like I really need to buy more):
   - I believe I've seen this mentioned in other places...
 
 - Came across this post a bit later on, saving it here as I'm headed to bed.
-  - (How to be a great software developer](http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer)
+  - [How to be a great software developer](http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer)
