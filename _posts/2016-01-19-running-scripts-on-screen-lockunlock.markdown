@@ -22,7 +22,7 @@ dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'" |
   while read x; do
     case "$x" in
       *"boolean true"*) echo SCREEN_LOCKED;;
-      *"boolean false"*) echo SCREEN_UNLOCKED;;  
+      *"boolean false"*) echo SCREEN_UNLOCKED;;
     esac
   done
 {% endhighlight %}
@@ -130,3 +130,28 @@ ScreenSaver started!
 {% endhighlight %}
 
 I'll have to dig in to why that happened... In the meantime the bash script I started with is looking pretty good...
+
+
+# Update 2016-01-20
+
+Decided to just run with the bash script for now. As one can see there isn't much difference than the original find. Just specified paths, etc.
+
+{% highlight sh %}
+#!/usr/bin/bash
+
+dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'" |
+  while read x; do
+    case "$x" in
+      *"boolean true"*) /usr/bin/sleep 60 && /usr/bin/sudo /usr/bin/zmpkg.pl start && echo "ZoneMinder Started!";;
+      *"boolean false"*) /usr/bin/sudo /usr/bin/zmpkg.pl stop && echo "ZoneMinder Stopped!";;
+    esac
+  done
+{% endhighlight %}
+
+I started it running and when I went out to lunch and came back it all worked like a charm...
+
+{% highlight sh %}
+~ $ ./bin/dbus-monitor-screensaver.sh 
+ZoneMinder Started!
+ZoneMinder Stopped!
+{% endhighlight %}
