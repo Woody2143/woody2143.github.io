@@ -2,9 +2,9 @@
 layout: post
 title: "Atlanta.pm - January 2016"
 date: "2016-01-07 19:23"
-tags: 
+tags:
   - perl
-categories: 
+categories:
   - atlanta.pm
 published: true
 ---
@@ -104,7 +104,7 @@ sub mystery ( Int $num --> Int ) {
   ```
   p6g -e 'my $a = 42; .say for sort $a.^methods>>.name'
   ```
-  
+
 # Around the dinner table
 - [Magnetic Notebook](http://imgur.com/gallery/psjYb)
 - Util was initially mistaken for a woman by the server. :)
@@ -134,6 +134,10 @@ sub mystery ( Int $num --> Int ) {
   - Util is a third of the way in
   - Enjoyed it; surprised it was from 1988
   - I would like to read more about why Zuckerberg/Musk endorsed it
+  - 2016-01-22 Update
+    - I finally got around to reading an [article](http://motherboard.vice.com/read/why-are-elon-musk-and-mark-zuckerberg-reading-utopian-sci-fi) about why they suggested reading this book and others by Iain Banks.
+    - I get my initial confusion as my focus was on the main character and what he was dealing with, not really with the universe as a whole.
+    - Likely need to read more of that series to really 'get it'.
 
 - Not that I fully endorse everything the below image says; but some of it was funny :)
   - found [here](http://imgur.com/gallery/2w9IS45)
