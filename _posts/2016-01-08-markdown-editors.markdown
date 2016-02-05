@@ -13,6 +13,12 @@ published: true
 
 I decided to look around at some different markdown editors just to see what was out there.
 
+# 2016-02-04 Update
+- JUST found an IOS app, Octopage, that is specifically for writing posts to Github.io
+  - will update further after I've used it a bit.
+
+# Original Post
+
 - [remarkable](https://remarkableapp.github.io/)
   - locally installed, linux only
   - not in the repo so had to download the rpm
