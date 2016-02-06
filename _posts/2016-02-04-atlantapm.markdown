@@ -65,7 +65,8 @@ Here are the notes from the February meeting of the Atlanta Perl Mongers. I make
   - Semi-Official [Dash Alternatives](https://blog.kapeli.com/dash-for-ios-android-windows-or-linux)
     - IOS: [Dash](https://kapeli.com/dash_ios)
     - Windows: [Velocity](http://velocity.silverlakesoftware.com/)
-    - Linux: [Zeal](http://zealdocs.org/)
+    - Linux/Windows: [Zeal](http://zealdocs.org/)
+      - Scott prefers this to Velocity
     - Android: [LovelyDocs](http://lovelydocs.io/)
   - Browser Based Alternative: [devdocs](http://devdocs.io/)
     - works [offline](http://devdocs.io/offline) in Chrome / Firefox
