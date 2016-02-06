@@ -53,7 +53,7 @@ Here are the notes from the February meeting of the Atlanta Perl Mongers. I make
   - [Addition Chain](https://en.wikipedia.org/wiki/Addition_chain)
 
 # Post Meeting
-- MDW tried out the [coding game](https://www.codingame.com/start) I posted about [last month](http://woody2143.github.io/atlanta.pm/2016/01/07/atlantapm.html)
+- MDW tried out the [coding game](https://www.codingame.com/start) I posted about [last month]({{site.baseurl}}/atlanta.pm/2016/01/07/atlantapm.html)
   - He suggests giving the first couple Mars Lander levels a go.
 
 # Dinner Chat
@@ -65,7 +65,7 @@ Here are the notes from the February meeting of the Atlanta Perl Mongers. I make
   - No really good responses to capture here.
   - Though there are some perl modules ([metacpan](https://metacpan.org/search?q=websockets&search_type=modules))
 - I talked a little bit about automating some things on my systems by watching DBUS
-  - Blog post about it [here](http://woody2143.github.io/desktop/2016/01/19/running-scripts-on-screen-lockunlock.html)
+  - Blog post about it [here]({{site.baseurl}}/desktop/2016/01/19/running-scripts-on-screen-lockunlock.html)
 - My set of [Dubs](http://www.getdubs.com/) worked fairly well in toning down the general noise of the restaurant while not impeding my ability to converse at the table.
   - They also [Kickstarted](https://www.kickstarter.com/projects/dopplerlabs/here-active-listening-change-the-way-you-hear-the) a neat looking set of ear plugs where you can adjust the audio in real time
     - [Here Active Listening](https://www.hereplus.me/)
@@ -75,4 +75,4 @@ Here are the notes from the February meeting of the Atlanta Perl Mongers. I make
 # Random Stuff
 - Seems the windows MSI installer for Perl 6 is [available](http://rakudo.org/downloads/star/)
 - Seen on /r/programming
-![Time Spent Programming](assets/TimeSpentProgrammingPieChart.jpg)
+![Time Spent Programming]({{site.baseurl}}/assets/TimeSpentProgrammingPieChart.jpg)
