@@ -61,6 +61,16 @@ Here are the notes from the February meeting of the Atlanta Perl Mongers. I make
 - Stephen and Util talked at great length about a code template system.
 - Scott talked some about needing to scrape web pages to make [Docsets](https://kapeli.com/docsets) for [Dash](https://kapeli.com/dash)
   - [HTML::TreeBuilder](https://metacpan.org/pod/HTML::TreeBuilder) was suggested by Util and Stephen as the way to grab elements from web pages.
+  - Dash is really OSX only
+  - Semi-Official [Dash Alternatives](https://blog.kapeli.com/dash-for-ios-android-windows-or-linux)
+    - IOS: [Dash](https://kapeli.com/dash_ios)
+    - Windows: [Velocity](http://velocity.silverlakesoftware.com/)
+    - Linux: [Zeal](http://zealdocs.org/)
+    - Android: [LovelyDocs](http://lovelydocs.io/)
+  - Browser Based Alternative: [devdocs](http://devdocs.io/)
+    - works [offline](http://devdocs.io/offline) in Chrome / Firefox
+    - [Chrome plugin](https://chrome.google.com/webstore/detail/devdocs/mnfehgbmkapmjnhcnbodoamcioleeooe)
+    - [Firefox plugin](https://marketplace.firefox.com/app/devdocs/)
 - Stephen asked if anyone has done anything with Node & Websockets
   - No really good responses to capture here.
   - Though there are some perl modules ([metacpan](https://metacpan.org/search?q=websockets&search_type=modules))
