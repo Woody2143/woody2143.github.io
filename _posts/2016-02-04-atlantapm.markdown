@@ -46,7 +46,7 @@ Here are the notes from the February meeting of the Atlanta Perl Mongers. I make
 - [Perl 6 is written in Perl 6](http://blogs.perl.org/users/zoffix_znet/2016/01/perl-6-is-written-in-perl-6.html)
   - Zoffix Blog Post about patching Perl 5 vs Perl 6
 
-# Util gives a talk
+# Util gives a talk - Arithmetic Coding with comparisons between Perl 5 and Perl 6
 - I'm not gonna lie, I can't capture notes on this that'll do it justice, you just had to be here.
   - [Rosettacode.org](https://rosettacode.org/wiki/Arithmetic_coding/As_a_generalized_change_of_radix#Perl_6)
   - If you ever wondered how to pronounce [radix](http://dictionary.cambridge.org/us/pronunciation/english/radix)
