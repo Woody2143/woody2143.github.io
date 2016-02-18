@@ -11,7 +11,7 @@ github_username:  woody2143
 linkedIn_username:  woody2143
 googlePlus_username:  BrandonWood2143
 
-highlighter: pygments
+highlighter: Rouge
 github: [Repository metadata]
 
 timezone: America/New_York
