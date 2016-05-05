@@ -17,7 +17,7 @@ My Google-Foo is either failing me or there just isn't much call to run scripts 
 
 So the bash script is below. Just need to change the 'echo SCREEN_LOCKED' with whatever scripts I want to run.
 
-{% highlight sh %}
+```sh
 dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'" |
   while read x; do
     case "$x" in
@@ -25,11 +25,11 @@ dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'" |
       *"boolean false"*) echo SCREEN_UNLOCKED;;
     esac
   done
-{% endhighlight %}
+```
 
 Looks straight forward enough. I went ahead and just ran the 'dbus-monitor' command just to see what the output looks like, and it does seem to match up fine.
 
-{% highlight sh %}
+```sh
 $ dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'"
 signal sender=org.freedesktop.DBus -> dest=:1.127 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
    string ":1.127"
@@ -38,19 +38,19 @@ signal sender=:1.66 -> dest=(null destination) serial=14 path=/org/mate/ScreenSa
    boolean true
 signal sender=:1.66 -> dest=(null destination) serial=15 path=/org/mate/ScreenSaver; interface=org.mate.ScreenSaver; member=ActiveChanged
    boolean false
-{% endhighlight %}
+```
 
 The bash script works like a champ so far...
 
-{% highlight sh %}
+```sh
 ~$ bash bin/dbus-monitor-screensaver.sh
 SCREEN_LOCKED
 SCREEN_UNLOCKED
-{% endhighlight %}
+```
 
 I also found this [StackOverflow question](http://unix.stackexchange.com/questions/212347/how-to-monitor-the-screen-lock-unlock-in-the-ubuntu-14-04) that has some python code included; basically based on the previous SO question/code.
 
-{% highlight python %}
+```python
 #!/usr/bin/env python
 import gobject
 import dbus
@@ -71,7 +71,7 @@ bus.add_match_string("type='signal',interface='org.mate.ScreenSaver'")
 bus.add_message_filter(filter_cb)
 mainloop = gobject.MainLoop()
 mainloop.run()
-{% endhighlight %}
+```
 
 Course my first instinct is to rewrite it in to Perl. And there appears to be a module for it already, [Net::DBus](http://search.cpan.org/~danberr/Net-DBus-0.33.1/lib/Net/DBus.pm)
 
@@ -83,7 +83,7 @@ Looking around at that I found a module that does what I want already, [Event::S
 
 Otherwise my script is pretty straight forward, this is just a test run to see it work.
 
-{% highlight perl %}
+```perl
 #!/usr/bin/env perl
 
 use strict;
@@ -95,39 +95,39 @@ my $ss = Event::ScreenSaver->new(
     start => sub {print "ScreenSaver started!\n" },
     stop  => sub {print "ScreenSaver stopped!\n" },
 )->run;
-{% endhighlight %}
+```
 
 Cause of course nothing goes to plan right away.
 
-{% highlight sh %}
+```sh
 $ ./bin/dbus-monitor-screensaver.pl
 org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.ScreenSaver was not provided by any .service files
-{% endhighlight %}
+```
 
 Ok, so the Perl module needs an update. Lucky for me it's on GitHub [https://github.com/ivanwills/Event-ScreenSaver](https://github.com/ivanwills/Event-ScreenSaver).
 
 I've gone ahead and forked it, [https://github.com/Woody2143/Event-ScreenSaver](https://github.com/Woody2143/Event-ScreenSaver). I'll get around to a pull request sometime.
 
 So the original code in file "lib/site_perl/5.22.0/Event/ScreenSaver/Unix.pm" is this:
-{% highlight perl %}
+```perl
     my $screensaver = $bus->get_service("org.gnome.ScreenSaver");
 
     my $screensaver_object = $screensaver->get_object("/org/gnome/ScreenSaver", "org.gnome.ScreenSaver");
-{% endhighlight %}
+```
 
 I changed the 'gnome' to 'mate':
-{% highlight perl %}
+```perl
     my $screensaver = $bus->get_service("org.mate.ScreenSaver");
 
     my $screensaver_object = $screensaver->get_object("/org/mate/ScreenSaver", "org.mate.ScreenSaver");
-{% endhighlight %}
+```
 
 I gave my simple script a test run and locked the screen. It worked, but the script immediately exited.
-{% highlight sh %}
+```sh
 ~$ bin/dbus-monitor-screensaver.pl
 ScreenSaver started!
 ~$
-{% endhighlight %}
+```
 
 I'll have to dig in to why that happened... In the meantime the bash script I started with is looking pretty good...
 
@@ -136,7 +136,7 @@ I'll have to dig in to why that happened... In the meantime the bash script I st
 
 Decided to just run with the bash script for now. As one can see there isn't much difference than the original find. Just specified paths, etc.
 
-{% highlight sh %}
+```sh
 #!/usr/bin/bash
 
 dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'" |
@@ -146,12 +146,12 @@ dbus-monitor --session "type='signal',interface='org.mate.ScreenSaver'" |
       *"boolean false"*) /usr/bin/sudo /usr/bin/zmpkg.pl stop && echo "ZoneMinder Stopped!";;
     esac
   done
-{% endhighlight %}
+```
 
 I started it running and when I went out to lunch and came back it all worked like a charm...
 
-{% highlight sh %}
+```sh
 ~ $ ./bin/dbus-monitor-screensaver.sh 
 ZoneMinder Started!
 ZoneMinder Stopped!
-{% endhighlight %}
+```
