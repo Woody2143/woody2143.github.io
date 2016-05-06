@@ -13,7 +13,7 @@ Here are the notes from the May meeting of the Atlanta Perl Mongers. I make no c
 
 # Pre-Meeting
 - [SouthEast Linux Fest](http://www.southeastlinuxfest.org/?p=2195) is coming up on Friday June 10th in Charlotte, NC.
-- Show off my (USB foot witch)[https://learn.adafruit.com/usb-foot-switch/overview].
+- Show off my [USB foot witch](https://learn.adafruit.com/usb-foot-switch/overview).
   - Not super practical but has a "it's neat" factor (at least for me)
   - I'll have to put a link to my repo of the arduino code.
   - I plan on writing up a full post about the whole thing just to have some better documentation out there.
