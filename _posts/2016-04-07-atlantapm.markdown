@@ -17,7 +17,7 @@ Here are the notes from the April meeting of the Atlanta Perl Mongers. I make no
 # Hey, what happened to March?!?
 - I gave a talk and took some notes, but never got around to writing up the post.
 - My talk kicked ass; you should be ashamed you missed it.
-  - LINK TO TALK
+  - Here are my [slides](https://goo.gl/Dif0ku)
 
 # Pre-Meeting
 - Trailer for [Rogue One](https://www.youtube.com/watch?v=Wji-BZ0oCwg) looks pretty good. :)
