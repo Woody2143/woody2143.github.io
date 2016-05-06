@@ -42,7 +42,7 @@ Here are the notes from the May meeting of the Atlanta Perl Mongers. I make no c
     - This caught my eye: [the futile art of programming by coincidence](https://pragprog.com/the-pragmatic-programmer/extracts/coincidence)
 
 - God has a Github account: [https://github.com/god?tab=repositories](https://github.com/god?tab=repositories)
-  - I don't see any LISP though
+  - I don't see any [LISP](https://xkcd.com/224/) though
   - ![XKCD Lisp](/assets/xkcd_lisp.jpg)
 
 # Dinner Chat
