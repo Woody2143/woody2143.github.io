@@ -27,7 +27,6 @@ Here are the notes from the April meeting of the Atlanta Perl Mongers. I make no
   - Mike/Stephen: Look at the symbol table
   - Debug it
 - Also talked some about my adventures in threads
-  - ADD LINKS Here
   - Stephen: Sounds like something map reduce would be good for
 - Stephen had a question about something he was working on
   - I had started writing this and completely missed the question
