@@ -59,7 +59,7 @@ Here are the notes from the May meeting of the Atlanta Perl Mongers. I make no c
   - A creation of Jerry Seinfelds.
     - Least that's what most people believe. Util shared that someone finally got around to asking Seinfeld about it and he hadn't heard of it before but thought it sounded like a good idea.
 
-- In case you were looking for something to listen to: (Software Engineering Podcasts Review)[http://blog.idempotent.ca/2016/04/28/software-engineering-podcasts-review/]
+- In case you were looking for something to listen to: [Software Engineering Podcasts Review](http://blog.idempotent.ca/2016/04/28/software-engineering-podcasts-review/)
   - [Reddit Post](https://www.reddit.com/r/programming/comments/4hycnz/software_engineering_podcasts_review/) that lead me to the above.
 
 - Guess there is an O'Reilly Book Cover generator out there as there have been a lot of posts on [/r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/) with different covers. It's been a bit run in to the ground but there are some funny ones like below:
