@@ -30,21 +30,27 @@ Basically the classic problem of how to track changes to a database.
   - The group helped me make some improvements to my script.
   - Here is a [Github Repo](https://github.com/Woody2143/databaseChangeLog) with my code. Contributions welcome!
 
+
 - Scott and Eye mentioned: activerecord / rake
   - Go from version to version of the database
   - [DBIx::ActiveRecord](http://search.cpan.org/~tsaito/DBIx-ActiveRecord-0.01/lib/DBIx/ActiveRecord.pm)
 
+
 - MDW mentioned [squitch](http://sqitch.org/) - a Perl solution
+
 
 # Git Discussion
 - [git workflow](http://nvie.com/posts/a-successful-git-branching-model/) a guide for branching
 
+
 # Ansible/Puppet Discussion
-- I totally missed what was said here. Sorry
+- Scott likes Puppet over Ansible and will likely give a talk on it in the near future.
+
 
 # Apache / Nginx
 - Some have dumped Apache for Nginx due to speed issues
 - [Nginx](https://www.nginx.com/resources/wiki/) doesn't handle CGI; but great as a proxy
+
 
 # Round Table - Cool Perl Tricks
 - Eye
