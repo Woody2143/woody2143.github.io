@@ -29,7 +29,6 @@ Basically the classic problem of how to track changes to a database.
   - MDW does something similar but they use date/times for in their filenames
   - The group helped me make some improvements to my script.
   - Here is a [Github Repo](https://github.com/Woody2143/databaseChangeLog) with my code. Contributions welcome!
-  - I'll put up the files to github at some point.
 
 - Scott and Eye mentioned: activerecord / rake
   - Go from version to version of the database
