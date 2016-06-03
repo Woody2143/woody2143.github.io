@@ -18,7 +18,9 @@ Here are the notes from the June meeting of the Atlanta Perl Mongers. I make no 
 - pathogen - vim package manager
 
 # DB Change Tracking
+
 Basically the classic problem of how to track changes to a database.
+
 - I went over my 'home grown' solution
   - 'ChangeLog' table in database
     - as SQL files are run their filenames are added to the 'ChangeLog' table.
