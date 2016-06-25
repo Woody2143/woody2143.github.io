@@ -16,27 +16,27 @@ I imagine if you are on this page you have heard of [Dancer](https://metacpan.or
 
 I have a couple of apps written using Dancer on the backend, serving up JSON via AJAX requests. I ran in to an issue with one of the apps that its backend was hosted on a different server than the front end page was served from. Why? Cause reasons, it happens. I fired up the page and attempted to get it to pull data but the browswer complained at me and some digging lead me in to reading about [Cross-Origin Resource Sharing](http://enable-cors.org/) (CORS). Which boils down to the fact that I need the backend to tell the browswer that other origins are allowed to make requests to it. This is done by adding an HTTP header:
 
-{% highlight %}
+```
 Access-Control-Allow-Origin: *
-{% endhighlight %}
+```
 
 As you can guess, the wild card means that any origin can make a request. You can, and I'm guessing likely should, list specific URLs. I can't say I've ever done it as these tools are internal and I don't really care who requests/uses the data.
 
 Ok, so how the question then became, how do I get Dancer to serve up this header. It ended up being pretty simple. It was just a matter of putting in the 'header' keyword in the route that was being called.
 
-{% highlight %}
+```
 get '/send/header', sub {
     header 'Access-Control-Allow-Origin' => '*';
 }
-{% endhighlight %}
+```
 
 That gets the job done well enough; but isn't very DRY. The nice thing with Dancer is that there is a way to have a block of code ran before each route, and that is with a 'before' hook.
 
-{% highlight %}
+```
 hook 'before' => sub {
     header 'Access-Control-Allow-Origin' => '*';
 };
-{% endhighlight %}
+```
 
 So now, no matter what, CORS should be enabled.
 
@@ -50,7 +50,7 @@ I attempted to use the 'error' hooks that Dancer provides but all my attempts to
 
 My searching lead me to this fine page: [http://enable-cors.org/server_perl.html](http://enable-cors.org/server_perl.html). If a gun was to my head I doubt I'd be able to explain [Plack](http://plackperl.org/) beyond that first paragraph on the page says. But I know I am using it to fire up Dancer. So I pulled down the package specified, [Plack::Middleware::CrossOrigin](https://metacpan.org/pod/Plack::Middleware::CrossOrigin) and added it to the psgi builder block as specified.
 
-{% highlight %}
+```
 use Dancer2;
 use MyWebApp;
 use Plack::Builder;
@@ -59,11 +59,11 @@ builder {
     enable 'CrossOrigin', origins => '*';
     dance;
 };
-{% endhighlight %}
+```
 
 It's worth noting that at some point I had switched over to CURL to view the headers instead of looking in a browser. So I knew that the 'header' keyword in Dancer was working so I pulled that out after adding this plack module and retested.
 
-{% highlight %}
+```
 $ curl --verbose http://localhost:5000/
 *   Trying 127.0.0.1...
 * Connected to localhost (127.0.0.1) port 5000 (#0)
@@ -79,11 +79,11 @@ $ curl --verbose http://localhost:5000/
 < Server: Perl Dancer2 0.200001
 < Content-Length: 375
 < Content-Type: text/html; charset=UTF-8
-{% endhighlight %}
+```
 
 While searching around and looking at things related to this issue I had seen posts complaining that this specific Plack module did not work. So I wasn't surprised to see that it didn't work, annoyed maybe, but not surprised. So I decided to dig in to the module itself to see what was up.
 
-{% highlight %}
+```
 $ curl -H "Origin: http://blah.com" --verbose http://localhost:5000/
 *   Trying 127.0.0.1...
 * Connected to localhost (127.0.0.1) port 5000 (#0)
@@ -102,4 +102,4 @@ $ curl -H "Origin: http://blah.com" --verbose http://localhost:5000/
 < Content-Type: text/html; charset=UTF-8
 < Access-Control-Allow-Origin: *
 < Access-Control-Expose-Headers:
-{% endhighlight %}
+```
