@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dancing with CORS
-date: '2016-06-18 22:28'
+date: '2016-06-27 21:40'
 tags:
   - perl
   - dancer
