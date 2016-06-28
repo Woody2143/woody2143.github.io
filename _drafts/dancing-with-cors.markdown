@@ -14,7 +14,7 @@ categories:
 # Dancing with CORS
 I imagine if you are on this page you have heard of [Dancer](https://metacpan.org/pod/Dancer) (and/or [Dancer2](https://metacpan.org/pod/Dancer2)). If you didn't know; go read the docs on it; I'm not going to take the time to list their virtues here.
 
-I have a couple of apps written using Dancer on the backend, serving up JSON via AJAX requests. I ran in to an issue with one of the apps that its backend was hosted on a different server than the front end page was served from. Why? Cause reasons, it happens. I fired up the page and attempted to get it to pull data but the browswer complained at me and some digging lead me in to reading about [Cross-Origin Resource Sharing](http://enable-cors.org/) (CORS). Which boils down to the fact that I need the backend to tell the browswer that other origins are allowed to make requests to it. This is done by adding an HTTP header:
+I have a couple of apps written using Dancer on the backend, serving up JSON via AJAX requests. I ran in to an issue with one of the apps that the backend was hosted on a different server than the front end page was served from. Why? Cause reasons, it happens. I fired up the page and attempted to get it to pull data but the browser complained at me and some digging lead me in to reading about [Cross-Origin Resource Sharing](http://enable-cors.org/) (CORS). Which boils down to the fact that I need the backend to tell the browser that other origins are allowed to make requests to it. This is done by adding an HTTP header:
 
 ```
 Access-Control-Allow-Origin: *
@@ -81,7 +81,21 @@ $ curl --verbose http://localhost:5000/
 < Content-Type: text/html; charset=UTF-8
 ```
 
-While searching around and looking at things related to this issue I had seen posts complaining that this specific Plack module did not work. So I wasn't surprised to see that it didn't work, annoyed maybe, but not surprised. So I decided to dig in to the module itself to see what was up.
+While searching around and looking at things related to this issue I had seen posts complaining that this specific Plack module did not work. So I wasn't surprised to see that it didn't work right off the bat. So I decided to dig in to the module itself to see what was up.
+
+I'd like to say I immediately saw the offending bit of code, but I had to play around with it a little bit before it hit me that the it was looking for the 'HTTP_ORIGIN' header.
+```
+#Plack/Middleware/CrossOrigin.pm
+sub call {
+    my ($self, $env) = @_;
+    my $origin = $env->{HTTP_ORIGIN};
+    my $continue_on_failure;
+    if ($origin) {
+        $continue_on_failure = $self->continue_on_failure;
+    }
+```
+
+So I looked up how to send the header via curl and retested.
 
 ```
 $ curl -H "Origin: http://blah.com" --verbose http://localhost:5000/
@@ -103,3 +117,33 @@ $ curl -H "Origin: http://blah.com" --verbose http://localhost:5000/
 < Access-Control-Allow-Origin: *
 < Access-Control-Expose-Headers:
 ```
+
+So now we are back at the same point as when Dancer was sending the header. Now to test sending an error.
+
+```
+#In Dancer
+send_error("", 500);
+```
+
+And here we see Plack::Middleware::CrossOrigin is doing what I need it to do.
+
+```
+$ curl -H "Origin: http://blah.com" --verbose http://localhost:5000/
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 5000 (#0)
+> GET / HTTP/1.1
+> User-Agent: curl/7.40.0
+> Host: localhost:5000
+> Accept: */*
+> Origin: http://blah.com
+>
+* HTTP 1.0, assume close after body
+< HTTP/1.0 500 Internal Server Error
+< Date: Sat, 18 Jun 2016 04:33:37 GMT
+< Server: HTTP::Server::PSGI
+< Content-Type: text/plain; charset=utf-8
+< Content-Length: 4567
+<
+```
+
+I went the long way around to get here, but figured it was at least worth writing up in case someone else has trouble with Dancer and CORS.
